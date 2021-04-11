@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Imagen</title>
+    <script type="text/javascript" src="../js/validar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+
+<body id="fondo">
+    <form action="registrarusuario.php" method="post" enctype="multipart/form-data" name="registrouser" onsubmit="ValidarRegistro" border="1">
+        <table border="1" cellpadding=5 cellspacing=0 align="center">
+            <tr>
+                <td width="147">
+                    <div align="left">Documento:</div>
+                </td>
+                <td width="263"><input type="text" name="documento" id="documento"></td>
+            </tr>
+            <tr>
+                <td width="147">
+                    <div align="left">Nombre:</div>
+                </td>
+                <td width="263"><input type="text" name="nombre" id="nombre"></td>
+            </tr>
+            <tr>
+                <td width="147">
+                    <div align="left">Apellido:</div>
+                </td>
+                <td width="263"><input type="text" name="apellido" id="apellido"></td>
+            </tr>
+            <tr>
+                <td width="147">
+                    <div align="left">Dirección:</div>
+                </td>
+                <td width="263"><input type="text" name="direccion" id="direccion"></td>
+            </tr>
+            <tr>
+                <td width="147">
+                    <div align="left">Teléfono:</div>
+                </td>
+                <td width="263"><input type="text" name="telefono" id="telefono"></td>
+            </tr>
+            <tr>
+                <td>
+                    <div align="left">Ciudad:</div>
+                </td>
+                <td>
+                    <select name="ciudad" id="ciudad">
+            <option selected="selected">-----------------</option>
+            <option>Bucaramanga</option>
+            <option>Floridablanca</option>
+            <option>Girón</option>
+            <option>Piedecuesta</option>
+          </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div align="left">Foto</div>
+                </td>
+                <td><label><input type="file" name="foto" id="foto" width="100" height="100" /></label></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Aceptar" onclick="ValidarRegistro(this.form)">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

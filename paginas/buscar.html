@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <script type="text/javascript" src="../js/validar.js"></script>
+    <title>Buscar usuario</title>
+</head>
+
+<body id="fondo">
+    <table cellpadding=0 cellspacing=0 border="1" align="center">
+        <tr>
+            <td>
+                <form method="POST" action="buscar.php" border="0" onsubmit="ValidarAcceso()" name="acceso">
+                    <fieldset>
+                        <legend class="texte_legende">Buscar por documento</legend>
+                        <table cellpadding=5 cellspacing=0 border="1">
+                            <tr>
+                                <td>Documento:</td>
+                                <td><input type="text" name="documento" id="documento"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center"><input type="submit" value="Buscar" onclick="ValidarAcceso(this.form)">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

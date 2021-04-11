@@ -1,0 +1,33 @@
+.centrar {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Cooper Black", Stencil, SimSun;
+}
+
+.centro {
+    text-align: center;
+}
+
+body#fondo {
+    background-image: url(../Imagenes/fondo1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+th#AzulEncabezado {
+    width: 200px;
+    background-color: #295889;
+    text-align: center;
+    color: #FFF;
+    font-family: Calibri;
+}
+
+td#GrisContenido {
+    width: 200px;
+    background-color: #EAEAEA;
+    text-align: center;
+    color: #000;
+    font-family: Calibri;
+    font-weight: bold;
+}
